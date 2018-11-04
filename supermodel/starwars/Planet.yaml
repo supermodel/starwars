@@ -1,0 +1,106 @@
+$id: http://supermodel.io/starwars/Planet
+$schema: http://json-schema.org/draft-07/schema#
+
+title: Planet
+type: object
+
+description: >-
+  A large mass, planet or planetoid in the Star Wars Universe.
+
+
+  **NOTE**: _This model is a modified version of https://swapi.co/ `Planet` schema_
+
+properties:
+  orbitalPeriod:
+    description: >-
+      The number of standard days it takes for this planet to complete
+      a single orbit of its local star.
+    type: string
+
+  climate:
+    description: The climate of this planet. Comma-seperated if diverse.
+    type: string
+
+  name:
+    description: The name of this planet.
+    type: string
+
+  rotationPeriod:
+    description: >-
+      The number of standard hours it takes for this planet to complete
+      a single rotation on its axis.
+    type: string
+
+  films:
+    description: An array of Films that this planet has appeared in.
+    type: array
+    items:
+      $ref: Film # Resolves to absolute `http://supermodel.io/starwars/Film`
+
+  residents:
+    description: An array of Peoples that live on this planet.
+    type: array
+    items:
+      $ref: Person # Resolves to absolute `http://supermodel.io/starwars/Person`
+
+  gravity:
+    description: >-
+       A number denoting the gravity of this planet. Where 1 is normal.
+    type: number
+
+  terrain:
+    description: the terrain of this planet. Comma-seperated if diverse.
+    type: string
+
+  population:
+    description: >-
+      The average population of sentient beings inhabiting this planet.
+    type: string
+
+  diameter:
+    description: The diameter of this planet in kilometers.
+    type: string
+
+  surfaceWater:
+    description: >-
+      The percentage of the planet surface that is naturally occuring water
+      or bodies of water.
+    type: string
+
+required:
+  - name
+  - rotationPeriod
+  - orbitalPeriod
+  - diameter
+  - climate
+  - gravity
+  - terrain
+  - surfaceWater
+  - population
+  - residents
+  - films
+
+examples:
+  - name: Tatooine
+    rotationPeriod: '23'
+    orbitalPeriod: '304'
+    diameter: '10465'
+    climate: arid
+    gravity: 1 standard
+    terrain: desert
+    surfaceWater: '1'
+    population: '200000'
+    residents: []
+    films: []
+
+  - name: Haruun Kal
+    rotationPeriod: '25'
+    orbitalPeriod: '383'
+    diameter: '10120'
+    climate: temperate
+    gravity: '0.98'
+    terrain: toxic cloudsea, plateaus, volcanoes
+    surfaceWater: unknown
+    population: '705300'
+    residents: []
+    films: []
