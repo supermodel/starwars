@@ -1,0 +1,108 @@
+$id: http://supermodel.io/starwars/Species
+$schema: http://json-schema.org/draft-07/schema#
+
+title: Species
+description: >-
+  A species within the Star Wars universe
+
+
+
+  **NOTE**: _This model is a modified version of https://swapi.co/ `Species` schema_
+
+type: object  
+
+properties:
+  eyeColors:
+    type: string
+    description: A comma-seperated string of common eye colors for this species, none
+      if this species does not typically have eyes.
+
+  skinColors:
+    type: string
+    description: A comma-seperated string of common skin colors for this species,
+      none if this species does not typically have skin.
+
+  classification:
+    type: string
+    description: The classification of this species.
+
+  designation:
+    type: string
+    description: The designation of this species.
+  
+  people:
+    type: array
+    description: An array of Persons that are a part of this species.
+    items:
+      $ref: Person
+  
+  name:
+    type: string
+    description: The name of this species.
+  
+  films:
+    type: array
+    description: An array of Films that this species has appeared in.
+    items:
+      $ref: Film
+
+  averageLifespan:
+    type: string
+    description: The average lifespan of this species in years.
+
+  averageHeight:
+    type: string
+    description: The average height of this person in centimeters.
+
+  homeworld:
+    type: string
+    description: The planet that this species originates
+      from.
+
+  language:
+    type: string
+    description: The language commonly spoken by this species.
+  
+  hairColors:
+    type: string
+    description: A comma-seperated string of common hair colors for this species,
+      none if this species does not typically have hair.
+
+required:
+  - name
+  - classification
+  - designation
+  - averageHeight
+  - averageLifespan
+  - hairColors
+  - skinColors
+  - eyeColors
+  - homeworld
+  - language
+  - people
+  - films
+
+examples:
+  - name: Human
+    classification: mammal
+    designation: sentient
+    average_height: '180'
+    skinColors: caucasian, black, asian, hispanic
+    hairColors: blonde, brown, black, red
+    eyeColors: brown, blue, green, hazel, grey, amber
+    averageLifespan: '120'
+    homeworld: {}
+    language: Galactic Basic
+    people: []
+    films: []
+
+  - name: Droid
+    classification: artificial
+    designation: sentient
+    averageHeight: n/a
+    skinColors: n/a
+    hairColors: n/a
+    eyeColors: n/a
+    averageLifespan: indefinite
+    people: []
+    films: []

@@ -2,14 +2,95 @@ $id: http://supermodel.io/starwars/Vehicle
 $schema: http://json-schema.org/draft-07/schema#
 
 title: Vehicle
-description: Vehicle model description
-type: object  # Change to the desired model type (http://json-schema.org/latest/json-schema-validation.html#rfc.section.6.1.1)
+type: object
+description: >-
+  A single transport craft that does not have hyperdrive capability
 
-# Add your model properties here:
-#
-# properties:
-#   modelProperty:
-#     type: string
-#
-#   anotherProperty:
-#     $ref: AnotherModel  # Reference to another model in the same directory
+
+  **NOTE**: _This model is a modified version of https://swapi.co/ `Vehicle` schema_
+
+properties:
+  passengers:
+    description: The number of non-essential people this vehicle can transport.
+    type: string
+
+  length:
+    description: The length of this vehicle in meters.
+    type: string
+
+  name:
+    description: The name of this vehicle. The common name, such as Sand Crawler.
+    type: string
+
+  cargoCapacity:
+    description: The maximum number of kilograms that this vehicle can transport.
+    type: string
+
+  films:
+    description: An array of Film URL Resources that this vehicle has appeared in.
+    type: array
+
+  cost:
+    description: The cost of this vehicle new, in galactic credits.
+    type: string
+
+  model:
+    description: The model or official name of this vehicle. Such as All Terrain Attack
+      Transport.
+    type: string
+
+  maxAtmospheringSpeed:
+    description: The maximum speed of this vehicle in atmosphere.
+    type: string
+
+  vehicleClass:
+    description: The class of this vehicle, such as Wheeled.
+    type: string
+
+  crew:
+    description: The number of personnel needed to run or pilot this vehicle.
+    type: string
+
+  consumables:
+    description: The maximum length of time that this vehicle can provide consumables
+      for its entire crew without having to resupply.
+    type: string
+    
+  pilots:
+    description: An array of People URL Resources that this vehicle has been piloted
+      by.
+    type: array
+
+  manufacturer:
+    description: The manufacturer of this vehicle. Comma seperated if more than one.
+    type: string
+
+required:
+  - name
+  - model
+  - manufacturer
+  - cost
+  - length
+  - maxAtmospheringSpeed
+  - crew
+  - passengers
+  - cargoCapacity
+  - consumables
+  - vehicleClass
+  - pilots
+  - films
+
+examples:
+  - name: X-34 landspeeder
+    model: X-34 landspeeder
+    manufacturer: SoroSuub Corporation
+    cost: '10550'
+    length: '3.4'
+    maxAtmospheringSpeed: '250'
+    crew: '1'
+    passengers: '1'
+    cargo_capacity: '5'
+    consumables: unknown
+    vehicleClass: repulsorcraft
+    pilots: []
+    films: []

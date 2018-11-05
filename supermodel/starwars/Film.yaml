@@ -2,14 +2,99 @@ $id: http://supermodel.io/starwars/Film
 $schema: http://json-schema.org/draft-07/schema#
 
 title: Film
-description: Film model description
-type: object  # Change to the desired model type (http://json-schema.org/latest/json-schema-validation.html#rfc.section.6.1.1)
+description: >- 
+  A Star Wars film
 
-# Add your model properties here:
-#
-# properties:
-#   modelProperty:
-#     type: string
-#
-#   anotherProperty:
-#     $ref: AnotherModel  # Reference to another model in the same directory
+
+  **NOTE**: _This model is a modified version of https://swapi.co/ `Film` schema_
+
+type: object
+
+properties:
+
+  releaseDate:
+    format: date
+    type: string
+    description: The release date at original creator country.
+
+  vehicles:
+    type: array
+    description: The vehicles featured within this film.
+    items:
+      $ref: Vehicle
+  
+  episodeId:
+    type: number
+    description: The episode number of this film.
+  
+  planets:
+    type: array
+    description: The planets featured within this film.
+    items:
+      $ref: Planet
+  
+  starships:
+    type: array
+    description: The starships featured within this film.
+    items:
+      $ref: Starship
+  
+  producer:
+    type: string
+    description: The producer(s) of this film.
+  
+  title:
+    type: string
+    description: The title of this film.
+    
+  species:
+    type: array
+    description: The species resources featured within this film.
+    items:
+      $ref: Species
+
+  director:
+    type: string
+    description: The director of this film.
+  
+  characters:
+    type: array
+    description: The people resources featured within this film.
+    items:
+      $ref: Person
+  
+  openingCrawl:
+    type: string
+    description: The opening crawl text at the beginning of this film.
+
+required:
+  - title
+  - episodeId
+  - openingCrawl
+  - director
+  - producer
+  - releaseDate
+  - characters
+  - planets
+  - starships
+  - vehicles
+  - species
+
+examples:
+- title: A New Hope
+  episodeId: 4
+  openingCrawl: "It is a period of civil war.\r\nRebel spaceships, striking\r\nfrom
+    a hidden base, have won\r\ntheir first victory against\r\nthe evil Galactic Empire.\r\n\r\nDuring
+    the battle, Rebel\r\nspies managed to steal secret\r\nplans to the Empire's\r\nultimate
+    weapon, the DEATH\r\nSTAR, an armored space\r\nstation with enough power\r\nto destroy
+    an entire planet.\r\n\r\nPursued by the Empire's\r\nsinister agents, Princess\r\nLeia
+    races home aboard her\r\nstarship, custodian of the\r\nstolen plans that can save
+    her\r\npeople and restore\r\nfreedom to the galaxy...."
+  director: George Lucas
+  producer: Gary Kurtz, Rick McCallum
+  releaseDate: '1977-05-25'
+  characters: []
+  planets: []
+  starships: []
+  vehicles: []
+  species: []

@@ -2,12 +2,12 @@ $id: http://supermodel.io/starwars/Person
 $schema: http://json-schema.org/draft-07/schema#
 
 title: Person
+type: object
 description: >-
   An individual person or character within the Star Wars universe.
-
+  
+  
   **NOTE**: _This model is a modified version of https://swapi.co/ `Person` schema_
-
-type: object
 
 properties:
   starships:
@@ -41,6 +41,8 @@ properties:
   species:
     description: Species that this person is.
     type: array
+    items:
+      $ref: Species
 
   height:
     description: The height of this person in meters.
