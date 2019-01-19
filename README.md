@@ -15,6 +15,6 @@ A model can freely reference any other model or model property using the JSON Sc
 
 The [Supermodel CLI tool](https://github.com/supermodel/supermodel-cli) can be used to create, validate or convert the models into various formats such as OpenAPI Spec, GraphQL schema, Avro schema, and others. Refer to the Supermodel CLI tool [documentation](https://github.com/supermodel/supermodel-cli#overview) for further details. 
 
-### Globally available models
+### Always Available Models
 
 When published to http://supermodel.io a model becomes globally available under its `$id` (e.g., `http://supermodel.io/starwars/Starship`), can be referred to in any other JSON Schema or consumed via http://supermodel.io API. Visit http://supermodel.io/starwars/Starship for further details on how to reference the model. 
