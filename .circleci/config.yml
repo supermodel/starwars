@@ -32,5 +32,8 @@ jobs:
       # Validate Supermodel files
       - run: yarn run test
 
+      # Publish models to supermodel.io
+      - run: yarn run supermodel-publish
+
       # Build the model
       # - run: yarn run build

@@ -11,6 +11,7 @@
     "@supermodel/cli": "^0.46.12"
   },
   "scripts": {
-    "test": "supermodel schema validate supermodel/starwars/"
+    "test": "supermodel schema validate ./supermodel/starwars/",
+    "supermodel-publish": "cd ./supermodel/starwars/ && supermodel push"
   }
 }
