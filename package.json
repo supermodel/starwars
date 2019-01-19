@@ -1,0 +1,16 @@
+{
+  "name": "starwars",
+  "version": "1.0.0",
+  "description": "Supermodel.io demo model",
+  "main": "index.js",
+  "repository": "https://github.com/supermodel/starwars.git",
+  "author": "Zdenek Nemec",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@supermodel/cli": "^0.46.12"
+  },
+  "scripts": {
+    "test": "supermodel schema validate supermodel/starwars/"
+  }
+}
