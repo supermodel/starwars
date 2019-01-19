@@ -1,4 +1,4 @@
-$id: http://supermodel.io/starwars/Species
+$id: http://supermodel.io/starwars/core/Species
 $schema: http://json-schema.org/draft-07/schema#
 
 title: Species

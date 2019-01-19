@@ -17,4 +17,4 @@ The [Supermodel CLI tool](https://github.com/supermodel/supermodel-cli) can be u
 
 ### Always Available Models
 
-When published to http://supermodel.io a model becomes globally available under its `$id` (e.g., `http://supermodel.io/starwars/Starship`), can be referred to in any other JSON Schema or consumed via http://supermodel.io API. Visit http://supermodel.io/starwars/Starship for further details on how to reference the model. 
+When published to http://supermodel.io a model becomes globally available under its `$id` (e.g., `http://supermodel.io/starwars/core/Starship`), can be referred to in any other JSON Schema or consumed via http://supermodel.io API. Visit http://supermodel.io/starwars/core/Starship for further details on how to reference the model. 

@@ -1,4 +1,4 @@
-$id: http://supermodel.io/starwars/Film
+$id: http://supermodel.io/starwars/core/Film
 $schema: http://json-schema.org/draft-07/schema#
 
 title: Film

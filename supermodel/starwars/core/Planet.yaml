@@ -1,4 +1,4 @@
-$id: http://supermodel.io/starwars/Planet
+$id: http://supermodel.io/starwars/core/Planet
 $schema: http://json-schema.org/draft-07/schema#
 
 title: Planet
@@ -34,13 +34,13 @@ properties:
     description: An array of Films that this planet has appeared in.
     type: array
     items:
-      $ref: Film # Resolves to absolute `http://supermodel.io/starwars/Film`
+      $ref: Film # Resolves to absolute `http://supermodel.io/starwars/core/Film`
 
   residents:
     description: An array of Peoples that live on this planet.
     type: array
     items:
-      $ref: Person # Resolves to absolute `http://supermodel.io/starwars/Person`
+      $ref: Person # Resolves to absolute `http://supermodel.io/starwars/core/Person`
 
   gravity:
     description: >-

@@ -1,4 +1,4 @@
-$id: http://supermodel.io/starwars/Person
+$id: http://supermodel.io/starwars/core/Person
 $schema: http://json-schema.org/draft-07/schema#
 
 title: Person
@@ -71,7 +71,7 @@ properties:
   homeworld:
     description: The planet that this person was born on.
     allOf:
-      - $ref: Planet # Relative model identifier, resolves to http://supermodel.io/starwars/Planet
+      - $ref: Planet # Relative model identifier, resolves to http://supermodel.io/starwars/core/Planet
 
 required:
   - name

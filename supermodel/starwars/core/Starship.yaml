@@ -1,4 +1,4 @@
-$id: http://supermodel.io/starwars/Starship
+$id: http://supermodel.io/starwars/core/Starship
 $schema: http://json-schema.org/draft-07/schema#
 
 title: Starship
