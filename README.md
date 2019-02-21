@@ -18,6 +18,25 @@ Supermodel data models follows these conventions:
 
 A model can freely reference any other model or model property using the JSON Schema `$ref` reference mechanism. The reference can point to any JSON Schema on the web, or it can be relative to the current model.
 
+#### Model Example
+
+```
+$id: http://supermodel.io/starwars/core/Person
+$schema: http://json-schema.org/draft-07/schema#
+
+title: Person
+type: object
+description: >-
+  An individual person or character within the Star Wars universe.
+
+properties:
+  name: 
+    type: string
+    examples:
+      - Luke Skywalker
+      - Darth Vader
+```
+
 ### CLI 
 
 The [Supermodel CLI tool](https://github.com/supermodel/supermodel) can be used to create, validate schemas or convert the models into various formats such as OpenAPI Spec, GraphQL schema, Avro schema, and others. 
@@ -32,7 +51,7 @@ When published to http://supermodel.io, a model becomes globally available under
 
 Visit http://supermodel.io/starwars/core/Starship for further details on how to reference the model. 
 
-### Build Artifacts 
+### OpenAPI Specification, Avro Schema, GraphQL Schema Examples
 
 This repository demonstrates how OpenAPI Specification 2.0, GraphQL Schema and Avro Schema are build from the supermodels. Refer to the [build](https://github.com/supermodel/starwars/tree/master/build) folder for the build artifacts.
 
