@@ -15,6 +15,7 @@
     "build-oas2": "mkdir -p ./build && cp ./starwars-api.oas2.yaml ./build/ && supermodel schema oas2 ./supermodel/starwars/core -o ./build/starwars-api.oas2.yaml",
     "build-avro": "mkdir -p ./build && supermodel schema avro ./supermodel/starwars/avro/FilmTopic.yaml > ./build/film-topic.json",
     "build-graphql": "mkdir -p ./build && supermodel schema graphql ./supermodel/starwars/core > ./build/starwars-api.graphql",
+    "build": "yarn build-oas2 && yarn build-avro && yarn build-graphql",
     "supermodel-publish": "cd ./supermodel/starwars/ && supermodel push"
   }
 }
