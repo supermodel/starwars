@@ -46,13 +46,13 @@ The [Supermodel CLI tool](https://github.com/supermodel/supermodel) can be used 
 
 See the [package.json](https://github.com/supermodel/starwars/blob/master/package.json) scripts section for examples how to use the Supermodel CLI.
 
-> Refer to the Supermodel CLI tool [documentation](https://github.com/supermodel/supermodel) for further details.
+Refer to the Supermodel CLI tool [documentation](https://github.com/supermodel/supermodel) for further details.
 
 ### Always Available Models
 
 When published to http://supermodel.io, a model becomes globally available under its `$id` (e.g., `http://supermodel.io/starwars/core/Starship`). The model can be referred to by any other JSON Schema or consumed via http://supermodel.io API. 
 
-> Visit http://supermodel.io/starwars/core/Starship for further details on how to reference the model. 
+Visit http://supermodel.io/starwars/core/Starship for further details on how to reference the model. 
 
 ### OpenAPI Specification, Avro Schema, GraphQL Schema Examples
 
@@ -64,4 +64,4 @@ Sources are as follows:
 - **Avro** (Film Kafka Topic): `/supermodel/starwars/avro/FilmTopic` model
 - **GraphQL**: `./supermodel/starwars/core` models
 
-> Refer to the [build](https://github.com/supermodel/starwars/tree/master/build) folder for the build artifacts.
+Refer to the [build](https://github.com/supermodel/starwars/tree/master/build) folder for the build artifacts.
