@@ -30,10 +30,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # Validate Supermodel files
-      - run: yarn run test
+      - run: yarn test
 
       # Publish models to supermodel.io
-      - run: yarn run supermodel-publish
+      - run: yarn supermodel-publish
 
       # Build the model
       # - run: yarn run build

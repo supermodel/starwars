@@ -16,6 +16,8 @@ properties:
     format: date
     type: string
     description: The release date at original creator country.
+    examples:
+      - '1977-05-25'
 
   vehicles:
     type: array
@@ -42,10 +44,14 @@ properties:
   producer:
     type: string
     description: The producer(s) of this film.
+    examples:
+      - Gary Kurtz, Rick McCallum
   
   title:
     type: string
     description: The title of this film.
+    examples:
+      - A New Hope
     
   species:
     type: array
@@ -56,6 +62,8 @@ properties:
   director:
     type: string
     description: The director of this film.
+    examples:
+      - George Lucas
   
   characters:
     type: array
@@ -66,6 +74,14 @@ properties:
   openingCrawl:
     type: string
     description: The opening crawl text at the beginning of this film.
+    examples: 
+      - "It is a period of civil war.\r\nRebel spaceships, striking\r\nfrom
+      a hidden base, have won\r\ntheir first victory against\r\nthe evil Galactic Empire.\r\n\r\nDuring
+      the battle, Rebel\r\nspies managed to steal secret\r\nplans to the Empire's\r\nultimate
+      weapon, the DEATH\r\nSTAR, an armored space\r\nstation with enough power\r\nto destroy
+      an entire planet.\r\n\r\nPursued by the Empire's\r\nsinister agents, Princess\r\nLeia
+      races home aboard her\r\nstarship, custodian of the\r\nstolen plans that can save
+      her\r\npeople and restore\r\nfreedom to the galaxy...."
 
 required:
   - title
@@ -79,22 +95,3 @@ required:
   - starships
   - vehicles
   - species
-
-examples:
-- title: A New Hope
-  episodeId: 4
-  openingCrawl: "It is a period of civil war.\r\nRebel spaceships, striking\r\nfrom
-    a hidden base, have won\r\ntheir first victory against\r\nthe evil Galactic Empire.\r\n\r\nDuring
-    the battle, Rebel\r\nspies managed to steal secret\r\nplans to the Empire's\r\nultimate
-    weapon, the DEATH\r\nSTAR, an armored space\r\nstation with enough power\r\nto destroy
-    an entire planet.\r\n\r\nPursued by the Empire's\r\nsinister agents, Princess\r\nLeia
-    races home aboard her\r\nstarship, custodian of the\r\nstolen plans that can save
-    her\r\npeople and restore\r\nfreedom to the galaxy...."
-  director: George Lucas
-  producer: Gary Kurtz, Rick McCallum
-  releaseDate: '1977-05-25'
-  characters: []
-  planets: []
-  starships: []
-  vehicles: []
-  species: []

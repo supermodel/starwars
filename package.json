@@ -1,17 +1,18 @@
 {
   "name": "starwars",
   "version": "1.0.0",
-  "description": "Supermodel.io demo model",
+  "description": "Supermodel.io Demo",
   "main": "index.js",
   "repository": "https://github.com/supermodel/starwars.git",
   "author": "Zdenek Nemec",
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "@supermodel/cli": "^0.46.12"
+    "@supermodel/cli": "^0.46.24"
   },
   "scripts": {
     "test": "supermodel schema validate ./supermodel/starwars/",
+    "build-oas2": "mkdir -p ./build && cp ./starwars-api.oas2.yaml ./build/ && supermodel schema oas2 ./supermodel/starwars/core -o ./build/starwars-api.oas2.yaml",
     "supermodel-publish": "cd ./supermodel/starwars/ && supermodel push"
   }
 }

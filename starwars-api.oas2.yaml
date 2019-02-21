@@ -1,0 +1,21 @@
+swagger: '2.0'
+info:
+  version: 0.0.0
+  title: The Star Wars API
+  description: >- 
+    API Description for supermodel.io demo – https://github.com/supermodel/starwars
+
+paths:
+  '/films/{id}':
+    get: 
+      summary: Retireve a Specific Film
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: string      
+      responses:
+        200:
+          description: Film
+          schema:
+            $ref:  '#/definitions/supermodelIoStarwarsCoreFilm'

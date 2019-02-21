@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@supermodel/cli@^0.46.12":
-  version "0.46.12"
-  resolved "https://registry.yarnpkg.com/@supermodel/cli/-/cli-0.46.12.tgz#a1a0d96181aaf196f149d6cb4ff194bee5494265"
+"@supermodel/cli@^0.46.24":
+  version "0.46.24"
+  resolved "https://registry.yarnpkg.com/@supermodel/cli/-/cli-0.46.24.tgz#83636766019faf28da79208c402cce2636d38192"
   dependencies:
-    "@supermodel/file" "^0.5.0"
-    "@supermodel/lib" "0.4.10"
+    "@supermodel/file" "^0.5.3"
+    "@supermodel/lib" "^0.4.19"
     ajv "^6.1.1"
     auth0-js "9.4.2"
     casex "0.0.5"
@@ -21,20 +21,20 @@
     node-fetch "2.1.2"
     rimraf "2.6.2"
 
-"@supermodel/file@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@supermodel/file/-/file-0.5.0.tgz#c391089cf4ffc9274df13ab4eb03147f728332d2"
+"@supermodel/file@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@supermodel/file/-/file-0.5.3.tgz#adcadaef4d244c92968f248c0269569ab26c5d48"
   dependencies:
     js-yaml "^3.11.0"
     node-fetch "^2.2.0"
 
-"@supermodel/lib@0.4.10":
-  version "0.4.10"
-  resolved "https://registry.yarnpkg.com/@supermodel/lib/-/lib-0.4.10.tgz#0a71ac7bff1a3f08274a0a42404aa95fd6f97ee8"
+"@supermodel/lib@^0.4.19":
+  version "0.4.19"
+  resolved "https://registry.yarnpkg.com/@supermodel/lib/-/lib-0.4.19.tgz#294f9a52657f7d402fe2fd3238513768c91cbee6"
   dependencies:
     ajv "^6.4.0"
     casex "0.0.5"
-    graphql "0.13.2"
+    graphql "14.1.1"
     js-yaml "^3.11.0"
     jsonpointer "4.0.1"
     url "0.11.0"
@@ -251,6 +251,12 @@ graphql@0.13.2:
   dependencies:
     iterall "^1.2.1"
 
+graphql@14.1.1:
+  version "14.1.1"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.1.1.tgz#d5d77df4b19ef41538d7215d1e7a28834619fac0"
+  dependencies:
+    iterall "^1.2.2"
+
 has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
@@ -323,7 +329,7 @@ isomorphic-fetch@2.2.1:
     node-fetch "^1.0.1"
     whatwg-fetch ">=0.10.0"
 
-iterall@^1.2.1:
+iterall@^1.2.1, iterall@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.2.2.tgz#92d70deb8028e0c39ff3164fdbf4d8b088130cd7"
 
