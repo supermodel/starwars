@@ -32,3 +32,14 @@ When published to http://supermodel.io, a model becomes globally available under
 
 Visit http://supermodel.io/starwars/core/Starship for further details on how to reference the model. 
 
+### Build Artifacts 
+
+This repository demonstrates how OpenAPI Specification 2.0, GraphQL Schema and Avro Schema are build from the supermodels. Refer to the [build](https://github.com/supermodel/starwars/tree/master/build) folder for the build artifacts.
+
+Sources are as follows:
+
+- **OpenAPI Specfication**: `starwars-api.oas2.yaml` + `./supermodel/starwars/core` models
+- **Avro** (Film Kafka Topic): `/supermodel/starwars/avro/FilmTopic` model
+- **GraphQL**: `./supermodel/starwars/core` models
+
+
