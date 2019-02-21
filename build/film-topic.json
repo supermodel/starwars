@@ -1,0 +1,28 @@
+{
+  "namespace": "io.supermodel.starwars.avro",
+  "name": "SupermodelIoStarwarsAvroFilmTopic",
+  "doc": "Model for a Kafka Star Wars Film Topic based on the Film model, where only handful of selected properties are part of the topic.",
+  "type": "record",
+  "fields": [
+    {
+      "name": "title",
+      "type": "string"
+    },
+    {
+      "name": "director",
+      "type": "string"
+    },
+    {
+      "name": "releaseDate",
+      "type": "string"
+    },
+    {
+      "name": "episodeId",
+      "type": "float"
+    },
+    {
+      "name": "producer",
+      "type": "string"
+    }
+  ]
+}

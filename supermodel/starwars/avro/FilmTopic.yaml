@@ -1,0 +1,24 @@
+$id: http://supermodel.io/starwars/avro/FilmTopic
+$schema: http://json-schema.org/draft-07/schema#
+
+title: Film Topic
+description: >-
+  Model for a Kafka Star Wars Film Topic based on the Film model, where only handful of selected properties are part of the topic.
+
+type: object
+
+properties:
+  title:
+    $ref: http://supermodel.io/starwars/core/Film#/properties/title
+
+  director:
+     $ref: http://supermodel.io/starwars/core/Film#/properties/director
+
+  releaseDate:
+    $ref: http://supermodel.io/starwars/core/Film#/properties/releaseDate
+
+  episodeId:
+    $ref: http://supermodel.io/starwars/core/Film#/properties/episodeId
+
+  producer:
+    $ref: http://supermodel.io/starwars/core/Film#/properties/producer

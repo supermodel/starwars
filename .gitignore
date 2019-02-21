@@ -61,4 +61,5 @@ typings/
 .next
 
 # Supermodel build
-build/**
+# Do not ignore for demo purposes
+# build/**
