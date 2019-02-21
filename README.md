@@ -12,9 +12,9 @@ Supermodel demo models using the [Star Wars API](https://swapi.co/) "theme", the
 ### Supermodel Models 
 Supermodel data models follows these conventions: 
 
-1. Models are, written as [JSON Schema in YAML format](http://json-schema.org/), one schema definition per one YAML file. 
-1. Every model must start with JSON Schema `$id`.
-1. A model should specify the used version of JSON Schema in the `$schema` field.
+1. Models are written as [JSON Schema in YAML format](http://json-schema.org/), one schema definition per one YAML file
+1. Every model must start with JSON Schema `$id`
+1. A model should specify the used version of JSON Schema in the `$schema` field
 
 A model can freely reference any other model or model property using the JSON Schema `$ref` reference mechanism. The reference can point to any JSON Schema on the web, or it can be relative to the current model.
 
