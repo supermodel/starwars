@@ -1,7 +1,7 @@
+[<img src="https://supermodel.io/static/media/badge.34435ccd.svg" width="200">](http://supermodel.io)
+
 # Star Wars Supermodel
 Demo models for http://supermodel.io
-
-[<img src="https://supermodel.io/static/media/badge.34435ccd.svg" width="200">](http://supermodel.io)
 
 ## Overview
 
