@@ -37,6 +37,9 @@ properties:
     examples:
       - Luke Skywalker
       - Darth Vader
+  
+  homeworld:
+    $ref: http://supermodel.io/starwars/core/Planet
 ```
 
 ### CLI 
