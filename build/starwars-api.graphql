@@ -1,0 +1,92 @@
+type SupermodelStarwarsCoreFilm {
+  releaseDate: String!
+  vehicles: [SupermodelStarwarsCoreVehicle]!
+  episodeId: Float!
+  planets: [SupermodelStarwarsCorePlanet]!
+  starships: [SupermodelStarwarsCoreStarship]!
+  producer: String!
+  title: String!
+  species: [SupermodelStarwarsCoreSpecies]!
+  director: String!
+  characters: [SupermodelStarwarsCorePerson]!
+  openingCrawl: String!
+}
+
+type SupermodelStarwarsCorePerson {
+  starships: [SupermodelStarwarsCoreStarship]!
+  eyeColor: String!
+  name: String!
+  mass: String!
+  gender: String!
+  films: [SupermodelStarwarsCoreFilm]!
+  species: [SupermodelStarwarsCoreSpecies]!
+  height: String!
+  hairColor: String!
+  vehicles: [SupermodelStarwarsCoreVehicle]!
+  skinColor: String!
+  birthYear: String!
+  homeworld: SupermodelStarwarsCorePlanet!
+}
+
+type SupermodelStarwarsCorePlanet {
+  orbitalPeriod: String!
+  climate: String!
+  name: String!
+  rotationPeriod: String!
+  films: [SupermodelStarwarsCoreFilm]!
+  residents: [SupermodelStarwarsCorePerson]!
+  gravity: Float!
+  terrain: String!
+  population: String!
+  diameter: String!
+  surfaceWater: String!
+}
+
+type SupermodelStarwarsCoreSpecies {
+  eyeColors: String!
+  skinColors: String!
+  classification: String!
+  designation: String!
+  people: [SupermodelStarwarsCorePerson]!
+  name: String!
+  films: [SupermodelStarwarsCoreFilm]!
+  averageLifespan: String!
+  averageHeight: String!
+  homeworld: String!
+  language: String!
+  hairColors: String!
+}
+
+type SupermodelStarwarsCoreStarship {
+  passengers: String!
+  length: String!
+  starshipClass: String!
+  cargoCapacity: String!
+  films: [SupermodelStarwarsCoreFilm]!
+  cost: String!
+  model: String!
+  maxAtmospheringSpeed: String!
+  crew: String!
+  hyperdriveRating: String
+  name: String!
+  consumables: String!
+  pilots: [SupermodelStarwarsCorePerson]!
+  manufacturer: String!
+  MGLT: String!
+}
+
+type SupermodelStarwarsCoreVehicle {
+  passengers: String!
+  length: String!
+  name: String!
+  cargoCapacity: String!
+  films: [SupermodelStarwarsCoreFilm]!
+  cost: String!
+  model: String!
+  maxAtmospheringSpeed: String!
+  vehicleClass: String!
+  crew: String!
+  consumables: String!
+  pilots: [SupermodelStarwarsCorePerson]!
+  manufacturer: String!
+}
