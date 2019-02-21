@@ -40,6 +40,9 @@ properties:
     $ref: http://supermodel.io/starwars/core/Planet
 ```
 
+See more examples in the [supermodel/starwars/core](https://github.com/supermodel/starwars/tree/master/supermodel/starwars/core) folder.
+
+
 ### CLI 
 
 The [Supermodel CLI tool](https://github.com/supermodel/supermodel) can be used to create, validate schemas or convert the models into various formats such as OpenAPI Spec, GraphQL schema, Avro schema, and others. 
@@ -65,3 +68,11 @@ Sources are as follows:
 - **GraphQL**: `./supermodel/starwars/core` models
 
 Refer to the [build](https://github.com/supermodel/starwars/tree/master/build) folder for the build artifacts.
+
+### Questions? Comments?
+
+Let us know what you think either in the issues or via twitter at [@supermodelio](https://twitter.com/supermodelio).
+
+----
+
+Made with 🖤 in Prague.
