@@ -20,7 +20,7 @@ A model can freely reference any other model or model property using the JSON Sc
 
 #### Model Example
 
-```
+```yaml
 $id: http://supermodel.io/starwars/core/Person
 $schema: http://json-schema.org/draft-07/schema#
 
